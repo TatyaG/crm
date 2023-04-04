@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">   
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="" class="header__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <input class="header__input" type="text" placeholder="Введите запрос">
+        </div>
+    </header>
+    <main>
+        <h1 class="visually-hidden">CRM-система</h1>
+        <section class="clients">
+            <div class="container">
+                <h2 class="clients__title">Клиенты</h2>
+                <table class="clients__table">
+                    <thead>
+                        <tr>
+                            <th><button id="sort-id" class="clients__table__btn">
+                                    ID
+                                    <svg class="arrow-id" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_224_707)">
+                                            <path
+                                                d="M2 6L2.705 6.705L5.5 3.915L5.5 10L6.5 10L6.5 3.915L9.29 6.71L10 6L6 2L2 6Z"
+                                                fill="#9873FF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_224_707">
+                                                <rect width="12" height="12" fill="white"
+                                                    transform="translate(12 12) rotate(-180)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </th>
+                            <th><button id="sort-fio" class="clients__table__btn">Фамилия Имя Отчество
+                                <svg class="arrow-fio" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_224_707)">
+                                            <path
+                                                d="M2 6L2.705 6.705L5.5 3.915L5.5 10L6.5 10L6.5 3.915L9.29 6.71L10 6L6 2L2 6Z"
+                                                fill="#9873FF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_224_707">
+                                                <rect width="12" height="12" fill="white"
+                                                    transform="translate(12 12) rotate(-180)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                    <span class="sort-fio-text">А-Я</span>
+                            </button></th>
+                            <th><button id="sort-create" class="clients__table__btn date-client">
+                                    Дата и время создания
+                                    <svg class="arrow-date-create" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_224_707)">
+                                            <path
+                                                d="M2 6L2.705 6.705L5.5 3.915L5.5 10L6.5 10L6.5 3.915L9.29 6.71L10 6L6 2L2 6Z"
+                                                fill="#9873FF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_224_707">
+                                                <rect width="12" height="12" fill="white"
+                                                    transform="translate(12 12) rotate(-180)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button></th>
+                            <th><button id="sort-change" class="clients__table__btn date-client">
+                                    Последние изменения
+                                    <svg class="arrow-date-change" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_224_707)">
+                                            <path
+                                                d="M2 6L2.705 6.705L5.5 3.915L5.5 10L6.5 10L6.5 3.915L9.29 6.71L10 6L6 2L2 6Z"
+                                                fill="#9873FF" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_224_707">
+                                                <rect width="12" height="12" fill="white"
+                                                    transform="translate(12 12) rotate(-180)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button></th>
+                            <th><button class="clients__table__btn">Контакты</button></th>
+                            <th><button class="clients__table__btn">Действия</button></th>
+                        </tr>
+                    </thead>
+                    <tbody id="clients-list">
+                        
+
+                    </tbody>
+                </table>
+                <div class="clients__btn-block">
+                  <button class="clients__btn" type="button">
+                    <span class="clients__btn-content">Добавить клиента</span>
+                </button>  
+                </div>
+                
+            </div>
+        </section>
+        
+    </main>
+        <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>      
+        <script src="main.js"></script>
+        
+
+</body>
+
+</html>
