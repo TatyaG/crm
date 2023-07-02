@@ -15,3 +15,17 @@
 Для запуска сервера выполните команду:
 
 `serve`
+
+<img width="100%" align="center" src="https://github.com/TatyaG/crm/blob/main/readme-assets/table.png">
+
+<h3>Возможность добавления нового клиента</h3>
+
+<img width="100%" align="center" src="https://github.com/TatyaG/crm/blob/main/readme-assets/new.png">
+
+<h3>Изменение данных клиента</h3>
+
+<img width="100%" align="center" src="https://github.com/TatyaG/crm/blob/main/readme-assets/change.png">
+
+<h3>Поиск клиента</h3>
+
+<img width="100%" align="center" src="https://github.com/TatyaG/crm/blob/main/readme-assets/search.png">
